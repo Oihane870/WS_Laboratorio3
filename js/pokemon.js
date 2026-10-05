@@ -45,17 +45,16 @@ function moveActivePokemon() {
 setInterval(moveActivePokemon, 10);
 
 // Instantiate Pokémon
-const pokemonNames = ['pikachu', 'bulbasaur', 'charmander', 'squirtle', 'jigglypuff'];
+const pokemonNames = ['pikachu', 'bulbasaur', 'charmander', 'squirtle'];
 
 function cargarJuego () {
 
   // llamar a loadImage
 
-  pokemonNames.forEach(name => {
-      //Solicita al servidor externo la imagen del pokemon correspondiente y genera el pokemon
-  });
-
-
+  // Cargar los Pokemon de pokemonNames con Promise.all (NO usar forEach):
+  // se lanzan todas las peticiones en paralelo y se espera a que terminen todas.
+  
+ 
 
 }
 
